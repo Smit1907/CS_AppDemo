@@ -15,6 +15,7 @@ def home():
 def collect_data():
     data = request.json
     visitor_logs.append(data)
+    print(f"New visitor data collected: {data}")  # Debugging log in the console
     return jsonify({"message": "Visitor data logged successfully!"}), 200
 
 # Route to view collected data
@@ -24,4 +25,3 @@ def view_logs():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-    # app.run(debug=True)

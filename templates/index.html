@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Collection Demo</title>
+    <title>Data Collected</title>
+    <style>
+        body {
+            background-color: #f00; /* Bright red background */
+            color: white;           /* White text for high contrast */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            animation: blink 1s infinite;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .emoji {
+            font-size: 4em;
+            margin-top: 20px;
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Data Collection Demo</h1>
-    <p>This page demonstrates how non-sensitive visitor data can be collected automatically.</p>
-
+    <h1>CONGRATULATION</h1>
+    <p>YOUR DATA HAS BEEN COLLECTED</p>
+    <div class="emoji">😂</div>
     <script src="/static/main.js"></script>
 </body>
 </html>
